@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class AddFishForm extends Component {
   references = {};
+
+  static propTypes = {
+    addFish: PropTypes.func
+  }
 
   addRef = (ref) => {
     this.references[ref.name] = ref;
